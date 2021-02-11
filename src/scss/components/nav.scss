@@ -2,9 +2,6 @@ nav {
   max-width: 1920px;
   margin: 0 auto;
   padding: 5rem 12rem;
-  @media screen and (max-width: 1440px) {
-    padding: 3rem 8rem;
-  }
   display: grid;
   grid-template-columns: 12rem 4rem;
   justify-content: space-between;
@@ -22,6 +19,12 @@ nav {
   }
   img {
     height: 1.6rem;
+  }
+  @media screen and (max-width: 1440px) {
+    padding: 3rem 8rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 3rem;
   }
 
   .open {
