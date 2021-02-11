@@ -13,7 +13,7 @@
         padding: 0 8rem;
     }
     @media screen and (max-width: 768px) {
-        padding: 0rem 3rem;
+        padding: 0 3rem;
     }
     box-sizing: border-box;
     display: flex;
@@ -171,7 +171,7 @@
                 }
             }
             &-items {
-                margin: 0 0 -1rem 0;
+                margin: 0 0 -1rem;
                 padding-left: 0;
                 @media screen and (min-width: 769px) and (max-width: 1200px) {
                     display: grid;
@@ -290,19 +290,20 @@
                     &:hover {
                         z-index: 2;
                         > a {
-                            color: var(--black);    
-                            @media screen and (max-width: 1440px) {
-                                &::before, &::after {
-                                    display: none;
-                                }
-                            }
-                        }
-                        & > a {
+                            color: var(--black);
+                            
                             &::before,
                             &::after {
                                 transform: translateX(0) scale(1);
                                 opacity: 1;
                             }
+                            
+                            @media screen and (max-width: 1440px) {
+                                &::before, &::after {
+                                    display: none;
+                                }
+                            }
+                            
                             + .deeplinks {
                                 opacity: 1;
                                 transform: translateY(0);
