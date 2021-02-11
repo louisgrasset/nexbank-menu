@@ -1,0 +1,20 @@
+@mixin transition-delay ($base) {
+    &:nth-child(1) {
+    transition-delay: #{$base}s;
+    }
+    &:nth-child(2) {
+    transition-delay: #{$base + 0.1}s;
+    }
+    &:nth-child(3) {
+    transition-delay: #{$base + 0.2}s;
+    }
+    &:nth-child(4) {
+    transition-delay: #{$base + 0.3}s;
+    }
+    &:nth-child(5) {
+    transition-delay: #{$base + 0.4}s;
+    }
+    &:nth-child(6) {
+    transition-delay: #{$base + 0.5}s;
+    }
+}
