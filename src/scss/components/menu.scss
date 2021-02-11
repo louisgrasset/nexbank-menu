@@ -290,7 +290,12 @@
                     &:hover {
                         z-index: 2;
                         > a {
-                            color: var(--black);
+                            color: var(--black);    
+                            @media screen and (max-width: 1440px) {
+                                &::before, &::after {
+                                    display: none;
+                                }
+                            }
                         }
                         & > a {
                             &::before,
